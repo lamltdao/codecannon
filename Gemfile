@@ -8,7 +8,9 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Send data from backend to react frontend
 gem 'gon'
 # Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg', '~> 1.2', '>= 1.2.3'
+# Deploy to GCP App Engine
+gem 'appengine', '~> 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
