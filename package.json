@@ -1,0 +1,43 @@
+{
+  "name": "rails_react_recipe",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.12.10",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/styles": "^4.11.3",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.3.0",
+    "axios": "^0.21.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "eslint-webpack-plugin": "^2.5.2",
+    "html-react-parser": "^1.2.4",
+    "i18next": "^20.2.1",
+    "i18next-browser-languagedetector": "^6.1.0",
+    "lodash": "^4.17.21",
+    "notistack": "^1.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-dropzone": "^11.3.2",
+    "react-flagpack": "^0.1.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-i18next": "^11.8.13",
+    "react-markdown": "^6.0.2",
+    "react-timeago": "^5.2.0",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

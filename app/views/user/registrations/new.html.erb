@@ -1,0 +1,7 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name),
+    html: {id: "signup-form", user: credentials_json(resource, %i(email))}) do |f| %>
+<% end %> 
+
+<div id="sign-up"></div>
+<%= javascript_pack_tag('user/sign_up.js') %>
+

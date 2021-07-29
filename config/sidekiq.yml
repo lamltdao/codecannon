@@ -1,0 +1,3 @@
+:queues:
+  - default # default
+  - mailers # This is new, although not added, devise will not report an error, but devise-async must be identified by this configuration.

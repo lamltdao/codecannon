@@ -1,0 +1,5 @@
+user:
+  username_regex: "\\A(?=.{4,20}$)[a-zA-Z0-9_]+\\z"
+file_manager:
+  max_stack_folder: 50
+codecannon_email_address: "admin@codecannon.net"
