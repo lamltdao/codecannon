@@ -25,6 +25,6 @@ class User::RegistrationsController < Devise::RegistrationsController
   private
 
   def set_gon
-    gon.recaptchaSiteKey = ENV["RECAPTCHA_SITE_KEY"]
+    gon.recaptchaSiteKey = Rails.env.production? ? Rails.application.credentials.RECAPTCHA_SITE_KEY : ENV["RECAPTCHA_SITE_KEY"]
   end
 end

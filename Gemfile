@@ -9,8 +9,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'gon'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2', '>= 1.2.3'
-# Deploy to GCP App Engine
-gem 'appengine', '~> 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -49,6 +47,8 @@ gem 'ffaker'
 
 gem "sidekiq"
 
+gem "dotenv-rails", "~> 2.7", ">= 2.7.6"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -80,6 +80,8 @@ group :test do
   gem 'webdrivers'
   gem 'shoulda-matchers', '~> 4.0'
 end
+
+gem "google-cloud-storage", "~> 1.31", ">= 1.31.1", require: false
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
