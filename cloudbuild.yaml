@@ -20,7 +20,7 @@ steps:
     args:
       [
         "-c",
-        "/buildstep/execute.sh -i gcr.io/$PROJECT_ID/${_SERVICE_NAME} -s ${PROJECT_ID}:${_REGION}:${_INSTANCE_NAME} -e RAILS_MASTER_KEY=$$RAILS_KEY -- bundle exec rails db:migrate",
+        "/buildstep/execute.sh -i gcr.io/$PROJECT_ID/${_SERVICE_NAME} -e RAILS_MASTER_KEY=$$RAILS_KEY -- bundle exec rails db:migrate",
       ]
     secretEnv: ["RAILS_KEY"]
 
@@ -38,15 +38,12 @@ steps:
         "${_REGION}",
         "--platform",
         "managed",
-        "--add-cloudsql-instances",
-        "${PROJECT_ID}:${_REGION}:${_INSTANCE_NAME}",
         "--allow-unauthenticated",
       ]
 
 substitutions:
   _REGION: asia-southeast1
   _SERVICE_NAME: codecannon-main
-  _INSTANCE_NAME: codecannon
   _SECRET_NAME: RAILS_SECRET_NAME
 
 availableSecrets:
