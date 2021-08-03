@@ -1,7 +1,7 @@
 Sidekiq.configure_server do |config|
   if Rails.env.production?
     config.redis = {
-      url: "redis://#{Rails.application.credentials.REDIS_HOSTNAME}:#{Rails.application.credentials.REDIS_PORT}",
+      url: "redis://#{Rails.application.credentials.REDIS_URI}",
       password: Rails.application.credentials.REDIS_PASSWORD
     }
   else
@@ -12,7 +12,7 @@ end
 Sidekiq.configure_client do |config|
   if Rails.env.production?
     config.redis = {
-      url: "redis://#{Rails.application.credentials.REDIS_HOSTNAME}:#{Rails.application.credentials.REDIS_PORT}",
+      url: "redis://#{Rails.application.credentials.REDIS_URI}",
       password: Rails.application.credentials.REDIS_PASSWORD
     }
   else
