@@ -46,4 +46,4 @@ ENV RAILS_MASTER_KEY=${MASTER_KEY}
 RUN bundle exec rake assets:precompile
 
 EXPOSE 8080
-CMD ["bundle", "exec", "foreman", "start"]
+CMD ["foreman", "start"]
