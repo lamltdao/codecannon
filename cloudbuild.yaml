@@ -42,7 +42,7 @@ steps:
       ]
 
 substitutions:
-  _REGION: asia-southeast1
+  _REGION: us-central1
   _SERVICE_NAME: codecannon-main
   _SECRET_NAME: RAILS_SECRET_NAME
 
